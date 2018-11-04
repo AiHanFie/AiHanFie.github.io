@@ -361,7 +361,7 @@
 <p>使用<code>Intellij IDEA</code>打开项目，找到<code>SampleTest.java</code>文件，右键执行run as -&gt; JunitTest</p>
 </blockquote>
 <p>此时iOS模拟器会自动打开，并且安装Bootstrap和XCTestWD两个app，然后执行自动化测试脚本，如果你在执行脚本时，报错；</p>
-<p><img src="Macaca-Java-forMac/MacacaResource1.png" alt=""><br><img src="Macaca-Java-forMac/MacacaResource2.png" alt=""></p>
+<p> <img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource1.png" alt=""><br> <img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource2.png" alt=""></p>
 <blockquote>
 <p>打开根目录下的<code>pom.xml</code>文件，将<code>junit</code>架包和<code>org.hamcrest</code>架包的<code>test</code>路径注释掉</p>
 </blockquote>
@@ -388,7 +388,7 @@
 <blockquote>
 <p>4、使用快捷键 command+u build一下</p>
 </blockquote>
-<p><img src="Macaca-Java-forMac/MacacaResource3.png" alt=""></p>
+<p><img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource3.png" alt=""></p>
 <ul>
 <li>将<code>TEAM_ID</code>通过环境变量传入</li>
 </ul>
@@ -397,14 +397,14 @@
 <ul>
 <li>打开项目的<code>Config.java</code>文件，将<code>IOS_UDID</code>的注释去掉并写入自己手机的udid</li>
 </ul>
-<p><img src="Macaca-Java-forMac/MacacaResource4.png" alt=""></p>
+<p><img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource4.png" alt=""></p>
 <blockquote>
 <p>从Xcode获取udid方法：Window-&gt; Devices and Simulators,其中<code>identifier</code>就是手机的udid</p>
 </blockquote>
 <ul>
 <li>打开项目中的<code>BaseTest.java</code>文件，去掉<code>props.put(&quot;udid&quot;, Config.IOS_UDID)</code>的注释</li>
 </ul>
-<p><img src="Macaca-Java-forMac/MacacaResource5.png" alt=""></p>
+<p><img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource5.png" alt=""></p>
 <p>链接手机，选中SampleTest.java,右键执行run as -&gt; JunitTest</p>
 <h2 id="五、元素查看"><a href="#五、元素查看" class="headerlink" title="五、元素查看"></a>五、元素查看</h2><ul>
 <li>安装App Inspector</li>
@@ -418,7 +418,7 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ app-inspector -u YOUR-DEVICE-ID</span><br></pre></td></tr></table></figure>
 <p>运行成功后，浏览器会默认打开网页，展示元素</p>
-<p><img src="Macaca-Java-forMac/MacacaResource6.png" alt=""></p>
+<p><img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource6.png" alt=""></p>
 <h2 id="六、常见参数"><a href="#六、常见参数" class="headerlink" title="六、常见参数"></a>六、常见参数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">platformName(String)        当前用例运行的平台 &#123; iOS / Android / Desktop &#125;</span><br><span class="line">browserName(String)         当前测试的浏览器名称 &#123; iOS: Safari &#125; &#123; Android: Chrome &#125; &#123; Desktop: Chrome / Electron &#125;</span><br><span class="line">reuse(Number)               0: 启动并安装 app。1 (默认): 卸载并重装 app。 2: 仅重装 app。3: 在测试结束后保持 app 状态。</span><br><span class="line">deviceName(String)          模拟器的名称，例如 ‘iPhone 6’ 或者 ‘Nexus 5x’。</span><br><span class="line">app(String)                 .ipa，.app 或者 .apk 文件的绝对地址或者远程地址，或者是包含上述文件格式的 Zip 文件。</span><br><span class="line">udid(String)                测试设备的唯一设备 ID。</span><br><span class="line">autoAcceptAlerts(Boolean)   自动接受所有的系统弹窗信息。默认是 false。</span><br><span class="line">autoDismissAlerts(Boolean)  自动拒绝所有的系统弹窗信息。默认是 false。</span><br></pre></td></tr></table></figure>
 <p>参考文档</p>
 <p><a href="https://macacajs.com/zh/quick-start" target="_blank" rel="noopener">Macaca官方文档-快速上手指南</a></p>
@@ -563,7 +563,7 @@
 <blockquote>
 <p>出现图片展示，就说明安装成功</p>
 </blockquote>
-<p><img src="macaca环境搭建forMac/macacaResource1.png" alt=""></p>
+<p><img src="/2018/11/03/Macaca环境搭建for Mac/macacaResource1.png" alt=""></p>
 <blockquote>
 <p>如果提示<code>-bash: brew: command not found</code>,则是缺失了环境变量，需要将其配置到~/.bash_profile中，如果用的是zsh,则将其配置到~/.zshrc中：</p>
 </blockquote>
@@ -592,7 +592,7 @@
 <blockquote>
 <p>安装成功后同样可以通过<code>npm -v</code>来验证是否安装成功;</p>
 </blockquote>
-<p><img src="macaca环境搭建forMac/macacaResource2.png" alt=""></p>
+<p><img src="/2018/11/03/Macaca环境搭建for Mac/macacaResource2.png" alt=""></p>
 <h2 id="三、Macaca环境安装之iOS"><a href="#三、Macaca环境安装之iOS" class="headerlink" title="三、Macaca环境安装之iOS"></a>三、Macaca环境安装之iOS</h2><ul>
 <li>安装Xcode9或者更高版本，可以直接从Apple Store下载；</li>
 <li>安装 <a href="https://github.com/libimobiledevice/usbmuxd" target="_blank" rel="noopener">usbmuxd</a> 以便于通过 USB 通道测试 iOS 真机，不需要测试真机则不用安装</li>
@@ -614,7 +614,7 @@
 <p>-g表示全局安装，如果不加-g参数，则只会在当前目录下安装macaca-cli</p>
 </blockquote>
 <p>如果看到如下可爱的🐒，那么就安装成功了，重新安装则会覆盖更新</p>
-<p><img src="macaca环境搭建forMac/macacaResource3.png" alt=""></p>
+<p><img src="/2018/11/03/Macaca环境搭建for Mac/macacaResource3.png" alt=""></p>
 <ul>
 <li>iOS驱动安装</li>
 </ul>
@@ -634,12 +634,12 @@
 <p>通过<code>macaca doctor</code>可以检查环境是否配置成功</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ macaca doctor</span><br></pre></td></tr></table></figure>
-<p><img src="macaca环境搭建forMac/macacaResource4.png" alt=""></p>
+<p><img src="/2018/11/03/Macaca环境搭建for Mac/macacaResource4.png" alt=""></p>
 <blockquote>
 <p>如果<code>macaca doctor</code>后，Node.js checklist、iOS checklist和Installed driver list中的iOS：2.0.35都为绿色（如图红框中内容），就说明iOS的环境OK了</p>
 </blockquote>
 <p>如果你在电脑上已经安装了Xcode，但是<code>macaca doctor</code>后，发现了<code>Xcode is uninstalled</code>的错误:</p>
-<p><img src="macaca环境搭建forMac/macacaResource5.png" alt=""></p>
+<p><img src="/2018/11/03/Macaca环境搭建for Mac/macacaResource5.png" alt=""></p>
 <blockquote>
 <p>检查一下Xcode的版本，如果是<code>9.4.0.1</code>，建议直接<code>升级Xcode版本</code>来解决问题，因为这个版本比较特殊，版本号有4位数，而macaca在判断版本号的时候只对3位数的版本进行判断；当然如果你不想升级Xcode版本，而想直接修改代码也是可以的，打开macaca-doctor源码里面的ios.js，有一段代码</p>
 </blockquote>
@@ -862,8 +862,8 @@
 <p>在网上偶然发现了别人的博客，感觉非常的漂亮，于是自己也想弄一个，Google了一下发现使用Hexo配合GitHub就可以搭建自己的博客。今天闲下来，就把具体的过程记录下来；</p>
 </blockquote>
 <h5 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h5><p><a href="https://pages.github.com/" target="_blank" rel="noopener">Github Pages</a>则是github上的一项功能，可以放置网页文件到指定文件夹，然后给你一个专属域名用于展示一些项目，现在大多用来开发制作个人博客网站</p>
-<h5 id="1-创建Github帐号"><a href="#1-创建Github帐号" class="headerlink" title="1.创建Github帐号"></a>1.创建Github帐号</h5><p><a href="https://github.com/" target="_blank" rel="noopener">Github官网</a>填写相应的注册信息就可以完成注册了<img src="如何使用Hexo搭建自己的博客站点/zc.png" alt=""></p>
-<h5 id="2-点击进入Github-Pages"><a href="#2-点击进入Github-Pages" class="headerlink" title="2.点击进入Github Pages"></a>2.点击进入<a href="https://pages.github.com/" target="_blank" rel="noopener">Github Pages</a></h5><p>然后跟着一步一步走，完成后就可以在浏览器打开了 <strong><br><a href="http://username.github.io" target="_blank" rel="noopener">http://username.github.io</a> </strong> 了。下面这个图片就是我建好的仓库了可以点击<strong><em> <a href="https://AiHanFie/AiHanFie.github.io" target="_blank" rel="noopener">https://AiHanFie/AiHanFie.github.io</a> </em></strong>进入我的博客；<img src="如何使用Hexo搭建自己的博客站点/ku.png" alt=""></p>
+<h5 id="1-创建Github帐号"><a href="#1-创建Github帐号" class="headerlink" title="1.创建Github帐号"></a>1.创建Github帐号</h5><p><a href="https://github.com/" target="_blank" rel="noopener">Github官网</a>填写相应的注册信息就可以完成注册了<img src="/2018/11/02/如何使用Hexo搭建自己的博客站点/zc.png" alt=""></p>
+<h5 id="2-点击进入Github-Pages"><a href="#2-点击进入Github-Pages" class="headerlink" title="2.点击进入Github Pages"></a>2.点击进入<a href="https://pages.github.com/" target="_blank" rel="noopener">Github Pages</a></h5><p>然后跟着一步一步走，完成后就可以在浏览器打开了 <strong><br><a href="http://username.github.io" target="_blank" rel="noopener">http://username.github.io</a> </strong> 了。下面这个图片就是我建好的仓库了可以点击<strong><em> <a href="https://AiHanFie/AiHanFie.github.io" target="_blank" rel="noopener">https://AiHanFie/AiHanFie.github.io</a> </em></strong>进入我的博客；<img src="/2018/11/02/如何使用Hexo搭建自己的博客站点/ku.png" alt=""></p>
 <h5 id="3-安装Node和Hexo"><a href="#3-安装Node和Hexo" class="headerlink" title="3.安装Node和Hexo"></a>3.安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node</a>和<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">Hexo</a></h5><blockquote>
 <p>安装完成后测试安装状态</p>
 </blockquote>
@@ -875,9 +875,9 @@
 <blockquote>
 <p>命令执行完成之后，建立的文件夹目录大致如下，其中_config.yml主要配置themes文件夹（主题）的个性定义，比如头像，昵称，简介以及编码格式,你要上传的Github地址等</p>
 </blockquote>
-<p><img src="如何使用Hexo搭建自己的博客站点/pic1.png" alt=""></p>
+<p><img src="/2018/11/02/如何使用Hexo搭建自己的博客站点/pic1.png" alt=""></p>
 <blockquote>
-<p>source文件夹中有个_posts文件夹，这个文件夹存放的主要是你的博客文章和一下资源文件<img src="如何使用Hexo搭建自己的博客站点/pic2.png" alt=""></p>
+<p>source文件夹中有个_posts文件夹，这个文件夹存放的主要是你的博客文章和一下资源文件<img src="/2018/11/02/如何使用Hexo搭建自己的博客站点/pic2.png" alt=""></p>
 </blockquote>
 <p>这样Hexo会在该文件夹创建本地博客所需的一切资源。这样本地博客就搭建好了，输入以下命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$hexo s --debug</span><br></pre></td></tr></table></figure>
@@ -905,8 +905,8 @@
 <li>修改一些其他的个性化配置(下面的是我的配置)</li>
 <li>如果想要修改主题的个性配置，需要修改主题里面的_config.yml 文件，修改方法大致相同</li>
 </ul>
-<p><img src="如何使用Hexo搭建自己的博客站点/pic3.png" alt=""></p>
-<h5 id="7-添加评论"><a href="#7-添加评论" class="headerlink" title="7.添加评论"></a>7.添加评论</h5><p>因为各种原因，我选择了<a href="https://leancloud.cn/" target="_blank" rel="noopener">Valine</a>作为,我的评论框,首先在<a href="https://leancloud.cn/" target="_blank" rel="noopener">Valine</a>注册帐号，并且创建一个应用，这个时候会有一个key和Id，如下图<br><img src="如何使用Hexo搭建自己的博客站点/pic5.png" alt="">,打开themes文件夹里面的anatole主题文件夹里面的_config.yml（这个地方修改原来的名字_confiy_simple.yml）把key和id填入如下图<br><img src="如何使用Hexo搭建自己的博客站点/pic4.png" alt=""><br>这个时候再去看本地的博客就会发现已经有了评论框了<br><img src="如何使用Hexo搭建自己的博客站点/pic6.png" alt=""></p>
+<p><img src="/2018/11/02/如何使用Hexo搭建自己的博客站点/pic3.png" alt=""></p>
+<h5 id="7-添加评论"><a href="#7-添加评论" class="headerlink" title="7.添加评论"></a>7.添加评论</h5><p>因为各种原因，我选择了<a href="https://leancloud.cn/" target="_blank" rel="noopener">Valine</a>作为,我的评论框,首先在<a href="https://leancloud.cn/" target="_blank" rel="noopener">Valine</a>注册帐号，并且创建一个应用，这个时候会有一个key和Id，如下图<br><img src="/2018/11/02/如何使用Hexo搭建自己的博客站点/pic5.png" alt="">,打开themes文件夹里面的anatole主题文件夹里面的_config.yml（这个地方修改原来的名字_confiy_simple.yml）把key和id填入如下图<br><img src="/2018/11/02/如何使用Hexo搭建自己的博客站点/pic4.png" alt=""><br>这个时候再去看本地的博客就会发现已经有了评论框了<br><img src="/2018/11/02/如何使用Hexo搭建自己的博客站点/pic6.png" alt=""></p>
 <blockquote>
 <p>注意：如果提交评论不能提交打开comments.pug文件是一个链接网址有错误。更新就可</p>
 </blockquote>

@@ -86,17 +86,17 @@
 <meta property="og:site_name" content="度半">
 <meta property="og:description" content="一、前言上篇文章我们将Macaca的环境搭建好了，今天就来学习一下运行官方示例、真机运行 二、需要用到的开发工具 Xcode：用来配置iOS真机环境   Intellij IDEA：编写测试用例代码  三、运行官方示例 将官方示例克隆到本地  1git clone https://github.com/macaca-sample/macaca-java-biz-sample.git --depth">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource1.png">
-<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource2.png">
-<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource3.png">
-<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource4.png">
-<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource5.png">
-<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource6.png">
-<meta property="og:updated_time" content="2018-11-04T12:37:19.220Z">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/MacacaResource1.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/MacacaResource2.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/MacacaResource3.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/MacacaResource4.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/MacacaResource5.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/MacacaResource6.png">
+<meta property="og:updated_time" content="2018-11-04T12:44:31.228Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Macaca-Java实例运行(for Mac)">
 <meta name="twitter:description" content="一、前言上篇文章我们将Macaca的环境搭建好了，今天就来学习一下运行官方示例、真机运行 二、需要用到的开发工具 Xcode：用来配置iOS真机环境   Intellij IDEA：编写测试用例代码  三、运行官方示例 将官方示例克隆到本地  1git clone https://github.com/macaca-sample/macaca-java-biz-sample.git --depth">
-<meta name="twitter:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource1.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/MacacaResource1.png">
 
 
 
@@ -364,7 +364,7 @@
 <p>使用<code>Intellij IDEA</code>打开项目，找到<code>SampleTest.java</code>文件，右键执行run as -&gt; JunitTest</p>
 </blockquote>
 <p>此时iOS模拟器会自动打开，并且安装Bootstrap和XCTestWD两个app，然后执行自动化测试脚本，如果你在执行脚本时，报错；</p>
-<p><img src="Macaca-Java-forMac/MacacaResource1.png" alt=""><br><img src="Macaca-Java-forMac/MacacaResource2.png" alt=""></p>
+<p> <img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource1.png" alt=""><br> <img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource2.png" alt=""></p>
 <blockquote>
 <p>打开根目录下的<code>pom.xml</code>文件，将<code>junit</code>架包和<code>org.hamcrest</code>架包的<code>test</code>路径注释掉</p>
 </blockquote>
@@ -391,7 +391,7 @@
 <blockquote>
 <p>4、使用快捷键 command+u build一下</p>
 </blockquote>
-<p><img src="Macaca-Java-forMac/MacacaResource3.png" alt=""></p>
+<p><img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource3.png" alt=""></p>
 <ul>
 <li>将<code>TEAM_ID</code>通过环境变量传入</li>
 </ul>
@@ -400,14 +400,14 @@
 <ul>
 <li>打开项目的<code>Config.java</code>文件，将<code>IOS_UDID</code>的注释去掉并写入自己手机的udid</li>
 </ul>
-<p><img src="Macaca-Java-forMac/MacacaResource4.png" alt=""></p>
+<p><img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource4.png" alt=""></p>
 <blockquote>
 <p>从Xcode获取udid方法：Window-&gt; Devices and Simulators,其中<code>identifier</code>就是手机的udid</p>
 </blockquote>
 <ul>
 <li>打开项目中的<code>BaseTest.java</code>文件，去掉<code>props.put(&quot;udid&quot;, Config.IOS_UDID)</code>的注释</li>
 </ul>
-<p><img src="Macaca-Java-forMac/MacacaResource5.png" alt=""></p>
+<p><img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource5.png" alt=""></p>
 <p>链接手机，选中SampleTest.java,右键执行run as -&gt; JunitTest</p>
 <h2 id="五、元素查看"><a href="#五、元素查看" class="headerlink" title="五、元素查看"></a>五、元素查看</h2><ul>
 <li>安装App Inspector</li>
@@ -421,7 +421,7 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ app-inspector -u YOUR-DEVICE-ID</span><br></pre></td></tr></table></figure>
 <p>运行成功后，浏览器会默认打开网页，展示元素</p>
-<p><img src="Macaca-Java-forMac/MacacaResource6.png" alt=""></p>
+<p><img src="/2018/11/04/Macaca-Java示例运行forMac/MacacaResource6.png" alt=""></p>
 <h2 id="六、常见参数"><a href="#六、常见参数" class="headerlink" title="六、常见参数"></a>六、常见参数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">platformName(String)        当前用例运行的平台 &#123; iOS / Android / Desktop &#125;</span><br><span class="line">browserName(String)         当前测试的浏览器名称 &#123; iOS: Safari &#125; &#123; Android: Chrome &#125; &#123; Desktop: Chrome / Electron &#125;</span><br><span class="line">reuse(Number)               0: 启动并安装 app。1 (默认): 卸载并重装 app。 2: 仅重装 app。3: 在测试结束后保持 app 状态。</span><br><span class="line">deviceName(String)          模拟器的名称，例如 ‘iPhone 6’ 或者 ‘Nexus 5x’。</span><br><span class="line">app(String)                 .ipa，.app 或者 .apk 文件的绝对地址或者远程地址，或者是包含上述文件格式的 Zip 文件。</span><br><span class="line">udid(String)                测试设备的唯一设备 ID。</span><br><span class="line">autoAcceptAlerts(Boolean)   自动接受所有的系统弹窗信息。默认是 false。</span><br><span class="line">autoDismissAlerts(Boolean)  自动拒绝所有的系统弹窗信息。默认是 false。</span><br></pre></td></tr></table></figure>
 <p>参考文档</p>
 <p><a href="https://macacajs.com/zh/quick-start" target="_blank" rel="noopener">Macaca官方文档-快速上手指南</a></p>

@@ -86,16 +86,16 @@
 <meta property="og:site_name" content="度半">
 <meta property="og:description" content="一、前言Macaca 是阿里开源的一套面向用户端软件的测试解决方案，支持支持主流的移动技术平台 iOS，Android，以及两大平台的混合运行时Webview；支持的语言有Js Java以及Python，所以相对于有开发经验的人来说，上手也是比较容易的； 二、需要用到的其他工具1、安装Homebrew Homebre的安装非常简单，打开终端直接在命令行执行下方命令，大概一分钟左右就可以完成：  1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource1.png">
-<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource2.png">
-<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource3.png">
-<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource4.png">
-<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource5.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macacaResource1.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macacaResource2.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macacaResource3.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macacaResource4.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macacaResource5.png">
 <meta property="og:updated_time" content="2018-11-04T07:35:59.539Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Macaca环境搭建(for Mac)">
 <meta name="twitter:description" content="一、前言Macaca 是阿里开源的一套面向用户端软件的测试解决方案，支持支持主流的移动技术平台 iOS，Android，以及两大平台的混合运行时Webview；支持的语言有Js Java以及Python，所以相对于有开发经验的人来说，上手也是比较容易的； 二、需要用到的其他工具1、安装Homebrew Homebre的安装非常简单，打开终端直接在命令行执行下方命令，大概一分钟左右就可以完成：  1">
-<meta name="twitter:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource1.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macacaResource1.png">
 
 
 
@@ -341,7 +341,7 @@
 <blockquote>
 <p>出现图片展示，就说明安装成功</p>
 </blockquote>
-<p><img src="macaca环境搭建forMac/macacaResource1.png" alt=""></p>
+<p><img src="/2018/11/03/Macaca环境搭建for Mac/macacaResource1.png" alt=""></p>
 <blockquote>
 <p>如果提示<code>-bash: brew: command not found</code>,则是缺失了环境变量，需要将其配置到~/.bash_profile中，如果用的是zsh,则将其配置到~/.zshrc中：</p>
 </blockquote>
@@ -370,7 +370,7 @@
 <blockquote>
 <p>安装成功后同样可以通过<code>npm -v</code>来验证是否安装成功;</p>
 </blockquote>
-<p><img src="macaca环境搭建forMac/macacaResource2.png" alt=""></p>
+<p><img src="/2018/11/03/Macaca环境搭建for Mac/macacaResource2.png" alt=""></p>
 <h2 id="三、Macaca环境安装之iOS"><a href="#三、Macaca环境安装之iOS" class="headerlink" title="三、Macaca环境安装之iOS"></a>三、Macaca环境安装之iOS</h2><ul>
 <li>安装Xcode9或者更高版本，可以直接从Apple Store下载；</li>
 <li>安装 <a href="https://github.com/libimobiledevice/usbmuxd" target="_blank" rel="noopener">usbmuxd</a> 以便于通过 USB 通道测试 iOS 真机，不需要测试真机则不用安装</li>
@@ -392,7 +392,7 @@
 <p>-g表示全局安装，如果不加-g参数，则只会在当前目录下安装macaca-cli</p>
 </blockquote>
 <p>如果看到如下可爱的🐒，那么就安装成功了，重新安装则会覆盖更新</p>
-<p><img src="macaca环境搭建forMac/macacaResource3.png" alt=""></p>
+<p><img src="/2018/11/03/Macaca环境搭建for Mac/macacaResource3.png" alt=""></p>
 <ul>
 <li>iOS驱动安装</li>
 </ul>
@@ -412,12 +412,12 @@
 <p>通过<code>macaca doctor</code>可以检查环境是否配置成功</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ macaca doctor</span><br></pre></td></tr></table></figure>
-<p><img src="macaca环境搭建forMac/macacaResource4.png" alt=""></p>
+<p><img src="/2018/11/03/Macaca环境搭建for Mac/macacaResource4.png" alt=""></p>
 <blockquote>
 <p>如果<code>macaca doctor</code>后，Node.js checklist、iOS checklist和Installed driver list中的iOS：2.0.35都为绿色（如图红框中内容），就说明iOS的环境OK了</p>
 </blockquote>
 <p>如果你在电脑上已经安装了Xcode，但是<code>macaca doctor</code>后，发现了<code>Xcode is uninstalled</code>的错误:</p>
-<p><img src="macaca环境搭建forMac/macacaResource5.png" alt=""></p>
+<p><img src="/2018/11/03/Macaca环境搭建for Mac/macacaResource5.png" alt=""></p>
 <blockquote>
 <p>检查一下Xcode的版本，如果是<code>9.4.0.1</code>，建议直接<code>升级Xcode版本</code>来解决问题，因为这个版本比较特殊，版本号有4位数，而macaca在判断版本号的时候只对3位数的版本进行判断；当然如果你不想升级Xcode版本，而想直接修改代码也是可以的，打开macaca-doctor源码里面的ios.js，有一段代码</p>
 </blockquote>
