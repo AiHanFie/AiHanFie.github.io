@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="一、前言Macaca 是阿里开源的一套面向用户端软件的测试解决方案，支持支持主流的移动技术平台 iOS，Android，以及两大平台的混合运行时Webview；支持的语言有Js Java以及Python，所以相对于有开发经验的人来说，上手也是比较容易的； 二、需要用到的其他工具1、安装Homebrew Homebre的安装非常简单，打开终端直接在命令行执行下方命令，大概一分钟左右就可以完成：  1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Macaca环境搭建(for Mac)">
+<meta property="og:url" content="http://yoursite.com/2018/11/03/Macaca环境搭建for Mac/index.html">
+<meta property="og:site_name" content="度半">
+<meta property="og:description" content="一、前言Macaca 是阿里开源的一套面向用户端软件的测试解决方案，支持支持主流的移动技术平台 iOS，Android，以及两大平台的混合运行时Webview；支持的语言有Js Java以及Python，所以相对于有开发经验的人来说，上手也是比较容易的； 二、需要用到的其他工具1、安装Homebrew Homebre的安装非常简单，打开终端直接在命令行执行下方命令，大概一分钟左右就可以完成：  1">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource1.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource2.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource3.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource4.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource5.png">
+<meta property="og:updated_time" content="2018-11-04T07:35:59.539Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Macaca环境搭建(for Mac)">
+<meta name="twitter:description" content="一、前言Macaca 是阿里开源的一套面向用户端软件的测试解决方案，支持支持主流的移动技术平台 iOS，Android，以及两大平台的混合运行时Webview；支持的语言有Js Java以及Python，所以相对于有开发经验的人来说，上手也是比较容易的； 二、需要用到的其他工具1、安装Homebrew Homebre的安装非常简单，打开终端直接在命令行执行下方命令，大概一分钟左右就可以完成：  1">
+<meta name="twitter:image" content="http://yoursite.com/2018/11/03/Macaca环境搭建for%20Mac/macaca环境搭建forMac/macacaResource1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/11/03/Macaca环境搭建for Mac/"/>
+
+
+
+
+
+  <title>Macaca环境搭建(for Mac) | 度半</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">度半</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">先不要</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/03/Macaca环境搭建for Mac/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="度半">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/phone.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="度半">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Macaca环境搭建(for Mac)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-03T23:36:13+08:00">
+                2018-11-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>Macaca 是阿里开源的一套面向用户端软件的测试解决方案，支持支持主流的移动技术平台 iOS，Android，以及两大平台的混合运行时Webview；支持的语言有Js Java以及Python，所以相对于有开发经验的人来说，上手也是比较容易的；</p>
+<h2 id="二、需要用到的其他工具"><a href="#二、需要用到的其他工具" class="headerlink" title="二、需要用到的其他工具"></a>二、需要用到的其他工具</h2><h4 id="1、安装Homebrew"><a href="#1、安装Homebrew" class="headerlink" title="1、安装Homebrew"></a>1、安装Homebrew</h4><blockquote>
+<p>Homebre的安装非常简单，打开终端直接在命令行执行下方命令，大概一分钟左右就可以完成：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果你的系统是Max OS X 10.11（El Capitan)或者其他版本，安装时，可能会遇到<code>EACCES: permission denied</code>这样的错误,说明权限不够，可以使用一下命令修复；但是需要注意的是，在新的Mac系统中上面的命令会报错，不能操作；：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo chown -R `whoami` /usr/local</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>安装完成后测试安装状态</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$brew -v</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>出现图片展示，就说明安装成功</p>
+</blockquote>
+<p><img src="macaca环境搭建forMac/macacaResource1.png" alt=""></p>
+<blockquote>
+<p>如果提示<code>-bash: brew: command not found</code>,则是缺失了环境变量，需要将其配置到~/.bash_profile中，如果用的是zsh,则将其配置到~/.zshrc中：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=/usr/local/bin:$PATH</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>环境变量修改后需要source一下进行更新，比如如果修改的是~/.bash_profile，需要执行<code>source /.bash_profile</code>,然后再次执行上方测试安装状态的步骤即可；</p>
+</blockquote>
+<h4 id="2、安装Node和npm"><a href="#2、安装Node和npm" class="headerlink" title="2、安装Node和npm"></a>2、安装Node和npm</h4><blockquote>
+<p>执行命令：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$brew install node</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>也可以打开官网下载相应系统安装包<a href="https://nodejs.org/dist/" target="_blank" rel="noopener">node.js版本列表</a><br>下载完成后双击apk安装，按照步骤执行下一步，安装完成后，检查node版本:</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$node -v</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Macaca2.0要求当前node版本要高于6.0，如果以前安装过低版本的Node，可以通过命令更新Node版本：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$brew upgrade node</span><br></pre></td></tr></table></figure>
+<p>npm是随同Node一起安装的包管理工具，可以使用npm install安装依赖包，但是在国内下载第三方包速度很慢，所以推荐使用淘宝的镜像：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果在安装过程中提示<code>Permission</code>权限相关错误，可以尝试永久破除sudo要求：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sudo chown ‐R $USER /usr/local</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>安装成功后同样可以通过<code>npm -v</code>来验证是否安装成功;</p>
+</blockquote>
+<p><img src="macaca环境搭建forMac/macacaResource2.png" alt=""></p>
+<h2 id="三、Macaca环境安装之iOS"><a href="#三、Macaca环境安装之iOS" class="headerlink" title="三、Macaca环境安装之iOS"></a>三、Macaca环境安装之iOS</h2><ul>
+<li>安装Xcode9或者更高版本，可以直接从Apple Store下载；</li>
+<li>安装 <a href="https://github.com/libimobiledevice/usbmuxd" target="_blank" rel="noopener">usbmuxd</a> 以便于通过 USB 通道测试 iOS 真机，不需要测试真机则不用安装</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install usbmuxd</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装<a href="https://github.com/libimobiledevice/ideviceinstaller" target="_blank" rel="noopener">ideviceinstaller</a> 用来给真机安装 App</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install ideviceinstaller</span><br></pre></td></tr></table></figure>
+<ul>
+<li>应用中如含有 WebView，请安装 <a href="https://github.com/google/ios-webkit-debug-proxy" target="_blank" rel="noopener">ios-webkit-debug-proxy</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install ios-webkit-debug-proxy</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Macaca命令行工具安装</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i -g macaca-cli</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>-g表示全局安装，如果不加-g参数，则只会在当前目录下安装macaca-cli</p>
+</blockquote>
+<p>如果看到如下可爱的🐒，那么就安装成功了，重新安装则会覆盖更新</p>
+<p><img src="macaca环境搭建forMac/macacaResource3.png" alt=""></p>
+<ul>
+<li>iOS驱动安装</li>
+</ul>
+<blockquote>
+<p>因为我们这次只需要安装iOS平台，所以只需要iOS的驱动</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i macaca-ios -g</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果在执行<code>npm i macaca-ios -g</code>时提示<code>xcode-select: error: tool &#39;xcodebuild&#39; requires Xcode, but active developer directory &#39;/Library/Developer/CommandLineTools&#39; is a command line tools instance</code>错误，执行如下命令即可：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo xcode-select -s /Applications/Xcode.app/Contents/Developer</span><br></pre></td></tr></table></figure>
+<p>到这里，我们的macaca的iOS环境就已经搭好了，接下来可以检查环境配置</p>
+<ul>
+<li>环境检查</li>
+</ul>
+<blockquote>
+<p>通过<code>macaca doctor</code>可以检查环境是否配置成功</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ macaca doctor</span><br></pre></td></tr></table></figure>
+<p><img src="macaca环境搭建forMac/macacaResource4.png" alt=""></p>
+<blockquote>
+<p>如果<code>macaca doctor</code>后，Node.js checklist、iOS checklist和Installed driver list中的iOS：2.0.35都为绿色（如图红框中内容），就说明iOS的环境OK了</p>
+</blockquote>
+<p>如果你在电脑上已经安装了Xcode，但是<code>macaca doctor</code>后，发现了<code>Xcode is uninstalled</code>的错误:</p>
+<p><img src="macaca环境搭建forMac/macacaResource5.png" alt=""></p>
+<blockquote>
+<p>检查一下Xcode的版本，如果是<code>9.4.0.1</code>，建议直接<code>升级Xcode版本</code>来解决问题，因为这个版本比较特殊，版本号有4位数，而macaca在判断版本号的时候只对3位数的版本进行判断；当然如果你不想升级Xcode版本，而想直接修改代码也是可以的，打开macaca-doctor源码里面的ios.js，有一段代码</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">exports.xcodeBuild = function *() &#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    const binPath = yield _.exec(`which xcodebuild`);</span><br><span class="line"></span><br><span class="line">    if (!_.isExistedFile(binPath)) &#123;</span><br><span class="line">      return _.fail(&apos;Xcode is uninstalled&apos;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    let originVersion = this.getXcodeVersion();</span><br><span class="line">    let version = originVersion.length !== 3 ? originVersion : `$&#123;originVersion&#125;.0`;</span><br><span class="line"></span><br><span class="line">    const MIN_VERSION = &apos;9.2.0&apos;;</span><br><span class="line"></span><br><span class="line">    if (semver.lt(version, MIN_VERSION)) &#123;</span><br><span class="line">      _.fail(&apos;xcodebuild version: %s lower than %s&apos;, originVersion, MIN_VERSION);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      _.pass(&apos;xcodebuild version: %s&apos;, originVersion);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; catch (e) &#123;</span><br><span class="line">    console.log(e);</span><br><span class="line">    return _.fail(&apos;Xcode is uninstalled&apos;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>上面的报错都是拿到的版本号是9.4.1.0，其实最后版本对比代码是</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const semver = require(&apos;semver&apos;);</span><br><span class="line">console.log(semver.lt(&apos;9.2.0&apos;,&apos;9.4.1.0&apos;))</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>改成</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const semver = require(&apos;semver&apos;);</span><br><span class="line">console.log(semver.lt(&apos;9.2.0&apos;,&apos;9.4.1&apos;))</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>基本判断是这句话的代码逻辑拿到的xcodebuild版本出发了+上.0的操作</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let version = originVersion.length !== 3 ? originVersion : `$&#123;originVersion&#125;.0`;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>完成以上操作后，再次<code>macaca doctor</code>就会发现<code>Xcode is uninstalled</code>错误已经没有了，iOS的环境至此也已经全部完成</p>
+</blockquote>
+<h4 id="三、Macaca环境安装之android"><a href="#三、Macaca环境安装之android" class="headerlink" title="三、Macaca环境安装之android"></a>三、Macaca环境安装之android</h4><ul>
+<li><p>安装<a href="https://developer.android.com/studio/" target="_blank" rel="noopener">Android Studio</a></p>
+</li>
+<li><p>安装<a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">JDK</a>，要求 1.8 （不支持Java 9）</p>
+</li>
+<li>配置<code>JAVA_HOME</code>，根据你所使用的 shell 工具修改不同的文件，比如 ~/.bash_profile, ~/.bashrc, ~/.zshrc</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>配置好后，更新环境变量，并检查一下环境变量是否已经配置成功：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo JAVA_HOME</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果能正常打印出环境变量，则证明环境变量已经配置成功</p>
+</blockquote>
+<!--* 安装`18-25`版本中的任一SDK和`Android Support Repository`
+* shell 环境设置 `ANDROID_HOME`，根据你所使用的Terminal修改不同的文件，比如 ~/.bash_profile, ~/.bashrc, ~/.zshrc
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ export ANDROID_HOME = /usr/local/opt/android-sdk</span><br></pre></td></tr></table></figure>
+<p>–&gt;</p>
+<ul>
+<li>安装 gradle 来构建<a href="https://github.com/macacajs/UIAutomatorWD">UIAutomatorWD</a>和其它依赖包</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install gradle</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>可以设置Maven源地址获取更快的安装速度。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ MAVEN_MIRROR_URL=http://maven.aliyun.com/nexus/content/groups/public/ npm i macaca-android -g</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>配置gradle环境变量</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export GRADLE_HOME=&quot;/usr/local/bin/gradle&quot;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装&amp;配置安卓sdk</li>
+</ul>
+<blockquote>
+<p>通过AndroidStudio内的sdkmanager安装安卓依赖的sdk版本，操作路径：AndroidStudio -&gt; Tools -&gt; Android -&gt; SDK Manager </p>
+</blockquote>
+<ul>
+<li>需要安装的依赖</li>
+</ul>
+<blockquote>
+<p>SDK Platforms:Android 6.0及以上版本<br>SDK Tools:Android SDK Platform-Tools&amp;Android SDK Tools &amp;&amp; NDK</p>
+</blockquote>
+<ul>
+<li>具体勾选效果如下：</li>
+</ul>
+<p><img src="macaca环境搭建forMac/macacaResource7.png" alt=""><br><img src="macaca环境搭建forMac/macacaResource8.png" alt=""></p>
+<blockquote>
+<p>上面第一张图中红框标记的ANDROID_HOME地址是安卓sdk的路径，需要配置到环境变量中，配置方法同gradle一样<br>如上都配置好后，需要将两个环境变量拼接到系统中的PATH变量中，全部配置完成后的内容如下：</p>
+</blockquote>
+<p><img src="macaca环境搭建forMac/macacaResource9.png" alt=""></p>
+<ul>
+<li>Android驱动安装</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i macaca‐android ‐g</span><br></pre></td></tr></table></figure>
+<ul>
+<li>检查Android环境</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ macaca doctor</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>macaca doctor</code>后，Node.js checklist、Android checklist和Installed driver list中的Android：2.0.48都为绿色（如图红框中内容），就说明Android的环境OK了,结果如图</p>
+</blockquote>
+<p><img src="macaca环境搭建forMac/macacaResource10.png" alt=""></p>
+<ul>
+<li>其他驱动安装,对应不同平台的驱动，可以选择性安装</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm i macaca‐chrome ‐g</span><br><span class="line">$ npm i macaca‐electron ‐g</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>macaca doctor</code>后,如果Installed driver list中包含：Chrome：1.0.7和electron：2.0.4，则说明驱动安装成功</p>
+</blockquote>
+<p><img src="macaca环境搭建forMac/macacaResource11.png" alt=""></p>
+<p>现在，macaca的环境安装就已经全部完成，可以开始你的macaca之旅啦！</p>
+<h4 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h4><p><a href="https://macacajs.com/zh/environment-setup">macaca官网</a></p>
+<p><a href="https://testerhome.com/topics/15904">Macaca 安装提示 xcode is uninstalled</a></p>
+<p><a href="https://testerhome.com/topics/9156">从无到有搭建 Macaca 环境 (forMac)</a></p>
+-->
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="度半 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="度半 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束,感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+    
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/02/如何使用Hexo搭建自己的博客站点/" rel="next" title="如何使用Hexo搭建自己的博客站点">
+                <i class="fa fa-chevron-left"></i> 如何使用Hexo搭建自己的博客站点
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/04/Macaca-Java示例运行forMac/" rel="prev" title="Macaca-Java实例运行(for Mac)">
+                Macaca-Java实例运行(for Mac) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/phone.JPG"
+                alt="度半" />
+            
+              <p class="site-author-name" itemprop="name">度半</p>
+              <p class="site-description motion-element" itemprop="description">以梦为马，不负韶华</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、前言"><span class="nav-number">1.</span> <span class="nav-text">一、前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、需要用到的其他工具"><span class="nav-number">2.</span> <span class="nav-text">二、需要用到的其他工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、安装Homebrew"><span class="nav-number">2.0.1.</span> <span class="nav-text">1、安装Homebrew</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、安装Node和npm"><span class="nav-number">2.0.2.</span> <span class="nav-text">2、安装Node和npm</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、Macaca环境安装之iOS"><span class="nav-number">3.</span> <span class="nav-text">三、Macaca环境安装之iOS</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#三、Macaca环境安装之android"><span class="nav-number">3.0.1.</span> <span class="nav-text">三、Macaca环境安装之android</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">度半</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

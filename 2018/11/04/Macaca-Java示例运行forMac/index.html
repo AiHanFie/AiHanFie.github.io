@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="一、前言上篇文章我们将Macaca的环境搭建好了，今天就来学习一下运行官方示例、真机运行 二、需要用到的开发工具 Xcode：用来配置iOS真机环境   Intellij IDEA：编写测试用例代码  三、运行官方示例 将官方示例克隆到本地  1git clone https://github.com/macaca-sample/macaca-java-biz-sample.git --depth">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Macaca-Java实例运行(for Mac)">
+<meta property="og:url" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/index.html">
+<meta property="og:site_name" content="度半">
+<meta property="og:description" content="一、前言上篇文章我们将Macaca的环境搭建好了，今天就来学习一下运行官方示例、真机运行 二、需要用到的开发工具 Xcode：用来配置iOS真机环境   Intellij IDEA：编写测试用例代码  三、运行官方示例 将官方示例克隆到本地  1git clone https://github.com/macaca-sample/macaca-java-biz-sample.git --depth">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource1.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource2.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource3.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource4.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource5.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource6.png">
+<meta property="og:updated_time" content="2018-11-04T12:37:19.220Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Macaca-Java实例运行(for Mac)">
+<meta name="twitter:description" content="一、前言上篇文章我们将Macaca的环境搭建好了，今天就来学习一下运行官方示例、真机运行 二、需要用到的开发工具 Xcode：用来配置iOS真机环境   Intellij IDEA：编写测试用例代码  三、运行官方示例 将官方示例克隆到本地  1git clone https://github.com/macaca-sample/macaca-java-biz-sample.git --depth">
+<meta name="twitter:image" content="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/Macaca-Java-forMac/MacacaResource1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/"/>
+
+
+
+
+
+  <title>Macaca-Java实例运行(for Mac) | 度半</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">度半</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">先不要</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/04/Macaca-Java示例运行forMac/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="度半">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/phone.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="度半">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Macaca-Java实例运行(for Mac)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-04T16:15:42+08:00">
+                2018-11-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>上篇文章我们将Macaca的环境搭建好了，今天就来学习一下运行官方示例、真机运行</p>
+<h2 id="二、需要用到的开发工具"><a href="#二、需要用到的开发工具" class="headerlink" title="二、需要用到的开发工具"></a>二、需要用到的开发工具</h2><blockquote>
+<p>Xcode：用来配置iOS真机环境</p>
+</blockquote>
+<blockquote>
+<p>Intellij IDEA：编写测试用例代码</p>
+</blockquote>
+<h2 id="三、运行官方示例"><a href="#三、运行官方示例" class="headerlink" title="三、运行官方示例"></a>三、运行官方示例</h2><ul>
+<li>将<a href="https://github.com/macaca-sample/macaca-java-biz-sample" target="_blank" rel="noopener">官方示例</a>克隆到本地</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/macaca-sample/macaca-java-biz-sample.git --depth=1</span><br></pre></td></tr></table></figure>
+<ul>
+<li>cd到项目的根目录下，然后更新依赖</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd macaca-java-biz-sample</span><br><span class="line">$ make install</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果下载依赖过程中报错，可能是由于mvn -s命令没有生效导致的，建议将根目录下settings.xml中的依赖配置到本地Maven目录下的settings.xml中</p>
+</blockquote>
+<ul>
+<li>启动服务器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ macaca server --verbose</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意启动server时不能加代理，因为server在本机启动需要连接localhost,加代理会导致无法建立连接</p>
+</blockquote>
+<ul>
+<li>执行测试用例</li>
+</ul>
+<p>方法一：</p>
+<blockquote>
+<p>新建cmd窗口(记得新建cmd窗口哦，不要跟macaca server在同一个窗口执行) ，因为java代码中，写的是默认启动iOS用例，所以在这里我们不用修改目标平台 </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mvn test</span><br></pre></td></tr></table></figure>
+<p>方法二：</p>
+<blockquote>
+<p>使用<code>Intellij IDEA</code>打开项目，找到<code>SampleTest.java</code>文件，右键执行run as -&gt; JunitTest</p>
+</blockquote>
+<p>此时iOS模拟器会自动打开，并且安装Bootstrap和XCTestWD两个app，然后执行自动化测试脚本，如果你在执行脚本时，报错；</p>
+<p><img src="Macaca-Java-forMac/MacacaResource1.png" alt=""><br><img src="Macaca-Java-forMac/MacacaResource2.png" alt=""></p>
+<blockquote>
+<p>打开根目录下的<code>pom.xml</code>文件，将<code>junit</code>架包和<code>org.hamcrest</code>架包的<code>test</code>路径注释掉</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;4.12&lt;/version&gt;</span><br><span class="line">&lt;!--            &lt;scope&gt;test&lt;/scope&gt;--&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br><span class="line">        &lt;dependency&gt;</span><br><span class="line">        </span><br><span class="line">   &lt;dependency&gt;</span><br><span class="line">            &lt;groupId&gt;org.hamcrest&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;hamcrest-library&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;1.2&lt;/version&gt;</span><br><span class="line">&lt;!--            &lt;scope&gt;test&lt;/scope&gt;--&gt;</span><br><span class="line">        &lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>并且在<code>org.apache.maven.plugins</code>架包的<code>build</code>内增加一层<code>&lt;pluginManagement&gt;</code></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">&lt;pluginManagement&gt;</span><br><span class="line">    &lt;plugins&gt;</span><br><span class="line">        &lt;plugin&gt;</span><br><span class="line">            &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</span><br><span class="line">            &lt;artifactId&gt;maven-checkstyle-plugin&lt;/artifactId&gt;</span><br><span class="line">            &lt;version&gt;2.17&lt;/version&gt;</span><br><span class="line">            &lt;executions&gt;</span><br><span class="line">                &lt;execution&gt;</span><br><span class="line">                    &lt;id&gt;validate&lt;/id&gt;</span><br><span class="line">                    &lt;phase&gt;validate&lt;/phase&gt;</span><br><span class="line">                    &lt;configuration&gt;</span><br><span class="line">                        &lt;configLocation&gt;checkstyle.xml&lt;/configLocation&gt;</span><br><span class="line">                        &lt;encoding&gt;UTF-8&lt;/encoding&gt;</span><br><span class="line">                        &lt;consoleOutput&gt;true&lt;/consoleOutput&gt;</span><br><span class="line">                        &lt;failsOnError&gt;true&lt;/failsOnError&gt;</span><br><span class="line">                        &lt;includeTestSourceDirectory&gt;true&lt;/includeTestSourceDirectory&gt;</span><br><span class="line">                    &lt;/configuration&gt;</span><br><span class="line">                    &lt;goals&gt;</span><br><span class="line">                        &lt;goal&gt;check&lt;/goal&gt;</span><br><span class="line">                    &lt;/goals&gt;</span><br><span class="line">                &lt;/execution&gt;</span><br><span class="line">            &lt;/executions&gt;</span><br><span class="line">        &lt;/plugin&gt;</span><br><span class="line">    &lt;/plugins&gt;</span><br><span class="line">&lt;/pluginManagement&gt;</span><br><span class="line">&lt;/build&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>保存<code>pom.xml</code>文件，删除模拟器中的Bootstrap和XCTestWD安装包，重新执行<code>mvn test</code>就可以了</p>
+</blockquote>
+<h2 id="四、iOS真机环境"><a href="#四、iOS真机环境" class="headerlink" title="四、iOS真机环境"></a>四、iOS真机环境</h2><ul>
+<li>找到macaca-ios驱动下的<code>XCTestWD</code>项目，使用xcode打开它</li>
+</ul>
+<blockquote>
+<p>1、右上角选中XCTestWDTests工程，选择真机</p>
+</blockquote>
+<blockquote>
+<p>2、找到TARGETS-&gt;XCTestWDUnitTest,选择Build settings</p>
+</blockquote>
+<blockquote>
+<p>3、找到Development Team，选择你的开发者账号，点击other，就会出现team_id</p>
+</blockquote>
+<blockquote>
+<p>4、使用快捷键 command+u build一下</p>
+</blockquote>
+<p><img src="Macaca-Java-forMac/MacacaResource3.png" alt=""></p>
+<ul>
+<li>将<code>TEAM_ID</code>通过环境变量传入</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DEVELOPMENT_TEAM_ID=TEAM_ID npm i app-inspector -g</span><br></pre></td></tr></table></figure>
+<p>环境变量修改完毕，我们可以尝试在真机上运行示例demo</p>
+<ul>
+<li>打开项目的<code>Config.java</code>文件，将<code>IOS_UDID</code>的注释去掉并写入自己手机的udid</li>
+</ul>
+<p><img src="Macaca-Java-forMac/MacacaResource4.png" alt=""></p>
+<blockquote>
+<p>从Xcode获取udid方法：Window-&gt; Devices and Simulators,其中<code>identifier</code>就是手机的udid</p>
+</blockquote>
+<ul>
+<li>打开项目中的<code>BaseTest.java</code>文件，去掉<code>props.put(&quot;udid&quot;, Config.IOS_UDID)</code>的注释</li>
+</ul>
+<p><img src="Macaca-Java-forMac/MacacaResource5.png" alt=""></p>
+<p>链接手机，选中SampleTest.java,右键执行run as -&gt; JunitTest</p>
+<h2 id="五、元素查看"><a href="#五、元素查看" class="headerlink" title="五、元素查看"></a>五、元素查看</h2><ul>
+<li>安装App Inspector</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install app-inspector -g</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用</li>
+</ul>
+<blockquote>
+<p>设备ID就是上方获取的udid</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ app-inspector -u YOUR-DEVICE-ID</span><br></pre></td></tr></table></figure>
+<p>运行成功后，浏览器会默认打开网页，展示元素</p>
+<p><img src="Macaca-Java-forMac/MacacaResource6.png" alt=""></p>
+<h2 id="六、常见参数"><a href="#六、常见参数" class="headerlink" title="六、常见参数"></a>六、常见参数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">platformName(String)        当前用例运行的平台 &#123; iOS / Android / Desktop &#125;</span><br><span class="line">browserName(String)         当前测试的浏览器名称 &#123; iOS: Safari &#125; &#123; Android: Chrome &#125; &#123; Desktop: Chrome / Electron &#125;</span><br><span class="line">reuse(Number)               0: 启动并安装 app。1 (默认): 卸载并重装 app。 2: 仅重装 app。3: 在测试结束后保持 app 状态。</span><br><span class="line">deviceName(String)          模拟器的名称，例如 ‘iPhone 6’ 或者 ‘Nexus 5x’。</span><br><span class="line">app(String)                 .ipa，.app 或者 .apk 文件的绝对地址或者远程地址，或者是包含上述文件格式的 Zip 文件。</span><br><span class="line">udid(String)                测试设备的唯一设备 ID。</span><br><span class="line">autoAcceptAlerts(Boolean)   自动接受所有的系统弹窗信息。默认是 false。</span><br><span class="line">autoDismissAlerts(Boolean)  自动拒绝所有的系统弹窗信息。默认是 false。</span><br></pre></td></tr></table></figure>
+<p>参考文档</p>
+<p><a href="https://macacajs.com/zh/quick-start" target="_blank" rel="noopener">Macaca官方文档-快速上手指南</a></p>
+<p><a href="https://macacajs.github.io/app-inspector/cn/" target="_blank" rel="noopener">App Inspector</a></p>
+<p><a href="https://testerhome.com/topics/6507" target="_blank" rel="noopener">Macaca MacOs 环境安装配置 macaca 总结记</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="度半 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="度半 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束,感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+    
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/03/Macaca环境搭建for Mac/" rel="next" title="Macaca环境搭建(for Mac)">
+                <i class="fa fa-chevron-left"></i> Macaca环境搭建(for Mac)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/phone.JPG"
+                alt="度半" />
+            
+              <p class="site-author-name" itemprop="name">度半</p>
+              <p class="site-description motion-element" itemprop="description">以梦为马，不负韶华</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、前言"><span class="nav-number">1.</span> <span class="nav-text">一、前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、需要用到的开发工具"><span class="nav-number">2.</span> <span class="nav-text">二、需要用到的开发工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、运行官方示例"><span class="nav-number">3.</span> <span class="nav-text">三、运行官方示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、iOS真机环境"><span class="nav-number">4.</span> <span class="nav-text">四、iOS真机环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、元素查看"><span class="nav-number">5.</span> <span class="nav-text">五、元素查看</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、常见参数"><span class="nav-number">6.</span> <span class="nav-text">六、常见参数</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">度半</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
